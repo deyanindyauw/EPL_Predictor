@@ -1,0 +1,2 @@
+C:\Users\Kensci\documents\visual studio 2015\Projects\CloudFootball\EplPredictorInstaller\bin\Release\EplPredictorInstaller.msi
+C:\Users\Kensci\documents\visual studio 2015\Projects\CloudFootball\EplPredictorInstaller\bin\Release\EplPredictorInstaller.wixpdb
