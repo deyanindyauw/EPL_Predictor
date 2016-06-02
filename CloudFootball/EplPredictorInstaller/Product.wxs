@@ -62,7 +62,7 @@
   </Fragment>
 
   <Fragment>
-    <Icon Id="icon.ico" SourceFile="C:\Users\Kensci\documents\visual studio 2015\Projects\CloudFootball\EplPredictorInstaller\res\Bpl_icon.ico"/>
+    <Icon Id="icon.ico" SourceFile="C:\\Users\\Kensci\\Documents\\visual studio 2015\\Projects\\CloudFootball\\CloudFootball\\bin\\Release\\res\\Bpl_icon.ico"/>
     <Property Id="ARPPRODUCTICON" Value="icon.ico" />
   </Fragment>
   
@@ -72,18 +72,55 @@
         <File Id="CloudFootball.exe" Source="C:\\Users\\Kensci\\Documents\\visual studio 2015\\Projects\\CloudFootball\\CloudFootball\\bin\\Release\\CloudFootball.exe" KeyPath="yes" Checksum="yes"/>
         <CreateFolder  Directory="APPLICATIONSUBFOLDER">            
         </CreateFolder>
-        <File Id="ManU_icon.ico" Source="C:\\Users\\Kensci\\Documents\\visual studio 2015\\Projects\\CloudFootball\\CloudFootball\\bin\\Release\\res\\ManU_icon.ico"/>
         <File Id="Bpl_icon.ico" Source="C:\\Users\\Kensci\\Documents\\visual studio 2015\\Projects\\CloudFootball\\CloudFootball\\bin\\Release\\res\\Bpl_icon.ico"/>
+        <File Id="AFCB_icon.ico" Source="C:\\Users\\Kensci\\Documents\\visual studio 2015\\Projects\\CloudFootball\\CloudFootball\\bin\\Release\\res\\AFCB_icon.ico"/>
+        <File Id="Arsenal_icon.ico" Source="C:\\Users\\Kensci\\Documents\\visual studio 2015\\Projects\\CloudFootball\\CloudFootball\\bin\\Release\\res\\Arsenal_icon.ico"/>
+        <File Id="AV_icon.ico" Source="C:\\Users\\Kensci\\Documents\\visual studio 2015\\Projects\\CloudFootball\\CloudFootball\\bin\\Release\\res\\AV_icon.ico"/>
+        <File Id="Chelsea_icon.ico" Source="C:\\Users\\Kensci\\Documents\\visual studio 2015\\Projects\\CloudFootball\\CloudFootball\\bin\\Release\\res\\Chelsea_icon.ico"/>
+        <File Id="Everton_icon.ico" Source="C:\\Users\\Kensci\\Documents\\visual studio 2015\\Projects\\CloudFootball\\CloudFootball\\bin\\Release\\res\\Everton_icon.ico"/>
+        <File Id="CP_icon.ico" Source="C:\\Users\\Kensci\\Documents\\visual studio 2015\\Projects\\CloudFootball\\CloudFootball\\bin\\Release\\res\\CP_icon.ico"/>
+        <File Id="LC_icon.ico" Source="C:\\Users\\Kensci\\Documents\\visual studio 2015\\Projects\\CloudFootball\\CloudFootball\\bin\\Release\\res\\LC_icon.ico"/>
+        <File Id="Liverpool_icon.ico" Source="C:\\Users\\Kensci\\Documents\\visual studio 2015\\Projects\\CloudFootball\\CloudFootball\\bin\\Release\\res\\Liverpool_icon.ico"/>
+        <File Id="MU_icon.ico" Source="C:\\Users\\Kensci\\Documents\\visual studio 2015\\Projects\\CloudFootball\\CloudFootball\\bin\\Release\\res\\MU_icon.ico"/>
+        <File Id="MC_icon.ico" Source="C:\\Users\\Kensci\\Documents\\visual studio 2015\\Projects\\CloudFootball\\CloudFootball\\bin\\Release\\res\\MC_icon.ico"/>
+        <File Id="NC_icon.ico" Source="C:\\Users\\Kensci\\Documents\\visual studio 2015\\Projects\\CloudFootball\\CloudFootball\\bin\\Release\\res\\NC_icon.ico"/>
+        <File Id="NU_icon.ico" Source="C:\\Users\\Kensci\\Documents\\visual studio 2015\\Projects\\CloudFootball\\CloudFootball\\bin\\Release\\res\\NU_icon.ico"/>
+        <File Id="SC_icon.ico" Source="C:\\Users\\Kensci\\Documents\\visual studio 2015\\Projects\\CloudFootball\\CloudFootball\\bin\\Release\\res\\SC_icon.ico"/>
+        <File Id="Southampton_icon.ico" Source="C:\\Users\\Kensci\\Documents\\visual studio 2015\\Projects\\CloudFootball\\CloudFootball\\bin\\Release\\res\\Southampton_icon.ico"/>
+        <File Id="Sunderland_icon.ico" Source="C:\\Users\\Kensci\\Documents\\visual studio 2015\\Projects\\CloudFootball\\CloudFootball\\bin\\Release\\res\\Sunderland_icon.ico"/>
+        <File Id="Swansea_icon.ico" Source="C:\\Users\\Kensci\\Documents\\visual studio 2015\\Projects\\CloudFootball\\CloudFootball\\bin\\Release\\res\\Swansea_icon.ico"/>
+        <File Id="TH_icon.ico" Source="C:\\Users\\Kensci\\Documents\\visual studio 2015\\Projects\\CloudFootball\\CloudFootball\\bin\\Release\\res\\TH_icon.ico"/>
+        <File Id="Watford_icon.ico" Source="C:\\Users\\Kensci\\Documents\\visual studio 2015\\Projects\\CloudFootball\\CloudFootball\\bin\\Release\\res\\Watford_icon.ico"/>
+        <File Id="WBA_icon.ico" Source="C:\\Users\\Kensci\\Documents\\visual studio 2015\\Projects\\CloudFootball\\CloudFootball\\bin\\Release\\res\\WBA_icon.ico"/>
+        <File Id="WHU_icon.ico" Source="C:\\Users\\Kensci\\Documents\\visual studio 2015\\Projects\\CloudFootball\\CloudFootball\\bin\\Release\\res\\WHU_icon.ico"/>
       </Component>
     </ComponentGroup>
     <!-- Temporary fix to add supporting files in main folder instead of subfolder 
     <ComponentGroup Id="ProductSubComponents" Directory="APPLICATIONSUBFOLDER">
       <Component Id="SupportingFiles" Guid="{5FDA464A-693A-404E-8EC7-EB00408C6B2B}">
-        <File Id="ManU_icon.ico" Source="C:\\Users\\Kensci\\Documents\\visual studio 2015\\Projects\\CloudFootball\\CloudFootball\\bin\\Release\\res\\ManU_icon.ico"/>
         <File Id="Bpl_icon.ico" Source="C:\\Users\\Kensci\\Documents\\visual studio 2015\\Projects\\CloudFootball\\CloudFootball\\bin\\Release\\res\\Bpl_icon.ico"/>
+        <File Id="AFCB_icon.ico" Source="C:\\Users\\Kensci\\Documents\\visual studio 2015\\Projects\\CloudFootball\\CloudFootball\\bin\\Release\\res\\AFCB_icon.ico"/>
+        <File Id="Arsenal_icon.ico" Source="C:\\Users\\Kensci\\Documents\\visual studio 2015\\Projects\\CloudFootball\\CloudFootball\\bin\\Release\\res\\Arsenal_icon.ico"/>
+        <File Id="AV_icon.ico" Source="C:\\Users\\Kensci\\Documents\\visual studio 2015\\Projects\\CloudFootball\\CloudFootball\\bin\\Release\\res\\AV_icon.ico"/>
+        <File Id="Chelsea_icon.ico" Source="C:\\Users\\Kensci\\Documents\\visual studio 2015\\Projects\\CloudFootball\\CloudFootball\\bin\\Release\\res\\Chelsea_icon.ico"/>
+        <File Id="Everton_icon.ico" Source="C:\\Users\\Kensci\\Documents\\visual studio 2015\\Projects\\CloudFootball\\CloudFootball\\bin\\Release\\res\\Everton_icon.ico"/>
+        <File Id="CP_icon.ico" Source="C:\\Users\\Kensci\\Documents\\visual studio 2015\\Projects\\CloudFootball\\CloudFootball\\bin\\Release\\res\\CP_icon.ico"/>
+        <File Id="LC_icon.ico" Source="C:\\Users\\Kensci\\Documents\\visual studio 2015\\Projects\\CloudFootball\\CloudFootball\\bin\\Release\\res\\LC_icon.ico"/>
+        <File Id="Liverpool_icon.ico" Source="C:\\Users\\Kensci\\Documents\\visual studio 2015\\Projects\\CloudFootball\\CloudFootball\\bin\\Release\\res\\Liverpool_icon.ico"/>
+        <File Id="MU_icon.ico" Source="C:\\Users\\Kensci\\Documents\\visual studio 2015\\Projects\\CloudFootball\\CloudFootball\\bin\\Release\\res\\MU_icon.ico"/>
+        <File Id="MC_icon.ico" Source="C:\\Users\\Kensci\\Documents\\visual studio 2015\\Projects\\CloudFootball\\CloudFootball\\bin\\Release\\res\\MC_icon.ico"/>
+        <File Id="NC_icon.ico" Source="C:\\Users\\Kensci\\Documents\\visual studio 2015\\Projects\\CloudFootball\\CloudFootball\\bin\\Release\\res\\NC_icon.ico"/>
+        <File Id="NU_icon.ico" Source="C:\\Users\\Kensci\\Documents\\visual studio 2015\\Projects\\CloudFootball\\CloudFootball\\bin\\Release\\res\\NU_icon.ico"/>
+        <File Id="SC_icon.ico" Source="C:\\Users\\Kensci\\Documents\\visual studio 2015\\Projects\\CloudFootball\\CloudFootball\\bin\\Release\\res\\SC_icon.ico"/>
+        <File Id="Southampton_icon.ico" Source="C:\\Users\\Kensci\\Documents\\visual studio 2015\\Projects\\CloudFootball\\CloudFootball\\bin\\Release\\res\\Southampton_icon.ico"/>
+        <File Id="Sunderland_icon.ico" Source="C:\\Users\\Kensci\\Documents\\visual studio 2015\\Projects\\CloudFootball\\CloudFootball\\bin\\Release\\res\\Sunderland_icon.ico"/>
+        <File Id="Swansea_icon.ico" Source="C:\\Users\\Kensci\\Documents\\visual studio 2015\\Projects\\CloudFootball\\CloudFootball\\bin\\Release\\res\\Swansea_icon.ico"/>
+        <File Id="TH_icon.ico" Source="C:\\Users\\Kensci\\Documents\\visual studio 2015\\Projects\\CloudFootball\\CloudFootball\\bin\\Release\\res\\TH_icon.ico"/>
+        <File Id="Watford_icon.ico" Source="C:\\Users\\Kensci\\Documents\\visual studio 2015\\Projects\\CloudFootball\\CloudFootball\\bin\\Release\\res\\Watford_icon.ico"/>
+        <File Id="WBA_icon.ico" Source="C:\\Users\\Kensci\\Documents\\visual studio 2015\\Projects\\CloudFootball\\CloudFootball\\bin\\Release\\res\\WBA_icon.ico"/>
       </Component>
-    </ComponentGroup>  
-    -->
+    </ComponentGroup>  -->
+    
   </Fragment>
 
   <!-- 

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi" xmlns:bal="http://schemas.microsoft.com/wix/BalExtension>">
+  <Product Id="*" Name="EplPredictor" Language="1033" Version="1.0.0.0" Manufacturer="CloudStudents" UpgradeCode="30c29c9f-90a2-4b66-861d-09d54999e2b4">
+    <Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+
+    <MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+    <Media Id="1" Cabinet="EplPredictor.cab" EmbedCab="yes" />
+
+    <Feature Id="ProductFeature" Title="EplPredictor" Level="1">
+      <ComponentGroupRef Id="ProductComponents" />
+    </Feature>
+
+    <!--  -->
+    <UIRef Id="WixUI_Advanced" />
+    <!-- <UIRef Id="WixUI_Mondo" /> -->
+    <!-- <UIRef Id="WixUI_Minimal" /> -->
+    <!-- <UIRef Id="WixUI_FeatureTree" /> -->
+    <!-- <UIRef Id="WixUI_InstallDir" /> -->
+    <Property Id="WIXUI_EXITDIALOGOPTIONALTEXT" Value="Thank you for installing this product." />
+
+    <Feature Id="MainApplication" Title="EPL Predictor" Level="1">
+      <ComponentRef Id="Executables" />
+      <!-- <ComponentRef Id="SupportingFiles" /> -->
+      <ComponentRef Id="ApplicationShortcut" /> <!-- Installs the shortcut -->
+    </Feature>
+    
+  </Product>
+
+  <!--
+  TODO : Unable to customize license since the schemas.microsoft.com/wix is returning empty
+   <Fragment>
+       <BootstrapperApplicationRef Id="WixStandardBootstrapperApplication.RtfLicense">
+          <bal:WixStandardBootstrapperApplication
+            LicenseFile="path\to\license.rtf"
+            LogoFile="path\to\customlogo.png"
+          />
+        </BootstrapperApplicationRef>  
+    </Fragment>
+  -->
+  
+  <Fragment>
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="ProgramFilesFolder" Name="PFiles">
+        <Directory Id="INSTALLFOLDER" Name="EplPredictor" />
+        <Directory Id="APPLICATIONFOLDER" Name="EplPredictor"/>        
+      </Directory>
+      <Directory Id="APPLICATIONSUBFOLDER" Name="res"/>
+      <!-- TODO : Need to revisit folder creation logic
+      <Directory Id="APPLICATIONSUBFOLDER" Name="res">
+        <Component Id="SupportingFiles" Guid="{733DDA94-FCCB-4409-991A-91ECCBA96071}"
+          SharedDllRefCount="no" KeyPath="no" NeverOverwrite="no" Permanent="no" Transitive="no"
+          Win64="no" Location="either">
+          <CreateFolder/>
+          <File Id="ManU_icon.ico" Source="C:\\Users\\Kensci\\Documents\\visual studio 2015\\Projects\\CloudFootball\\CloudFootball\\bin\\Release\\res\\ManU_icon.ico"/>
+          <File Id="Bpl_icon.ico" Source="C:\\Users\\Kensci\\Documents\\visual studio 2015\\Projects\\CloudFootball\\CloudFootball\\bin\\Release\\res\\Bpl_icon.ico"/>
+        </Component>
+      </Directory>
+      -->
+    </Directory>
+    <Property Id="ApplicationFolderName" Value="EplPredictor" />
+    <Property Id="WixAppFolder" Value="WixPerMachineFolder" /> <!-- WixPerUserFolder / 0-->    
+  </Fragment>
+
+  <Fragment>
+    <Icon Id="icon.ico" SourceFile="C:\Users\Kensci\documents\visual studio 2015\Projects\CloudFootball\EplPredictorInstaller\res\Bpl_icon.ico"/>
+    <Property Id="ARPPRODUCTICON" Value="icon.ico" />
+  </Fragment>
+  
+  <Fragment>
+    <ComponentGroup Id="ProductComponents" Directory="APPLICATIONFOLDER">
+      <Component Id="Executables" Guid="{28774DA8-B974-4927-AAFB-0EF95473D80A}">
+        <File Id="CloudFootball.exe" Source="C:\\Users\\Kensci\\Documents\\visual studio 2015\\Projects\\CloudFootball\\CloudFootball\\bin\\Release\\CloudFootball.exe" KeyPath="yes" Checksum="yes"/>
+        <CreateFolder  Directory="APPLICATIONSUBFOLDER">            
+        </CreateFolder>
+        <File Id="ManU_icon.ico" Source="C:\\Users\\Kensci\\Documents\\visual studio 2015\\Projects\\CloudFootball\\CloudFootball\\bin\\Release\\res\\ManU_icon.ico"/>
+        <File Id="Bpl_icon.ico" Source="C:\\Users\\Kensci\\Documents\\visual studio 2015\\Projects\\CloudFootball\\CloudFootball\\bin\\Release\\res\\Bpl_icon.ico"/>
+      </Component>
+    </ComponentGroup>
+    <!-- Temporary fix to add supporting files in main folder instead of subfolder 
+    <ComponentGroup Id="ProductSubComponents" Directory="APPLICATIONSUBFOLDER">
+      <Component Id="SupportingFiles" Guid="{5FDA464A-693A-404E-8EC7-EB00408C6B2B}">
+        <File Id="ManU_icon.ico" Source="C:\\Users\\Kensci\\Documents\\visual studio 2015\\Projects\\CloudFootball\\CloudFootball\\bin\\Release\\res\\ManU_icon.ico"/>
+        <File Id="Bpl_icon.ico" Source="C:\\Users\\Kensci\\Documents\\visual studio 2015\\Projects\\CloudFootball\\CloudFootball\\bin\\Release\\res\\Bpl_icon.ico"/>
+      </Component>
+    </ComponentGroup>  
+    -->
+  </Fragment>
+
+  <!-- 
+  TODO: Move application shortcut to desktop. Right now its getting created inside the installation directory
+  -->
+  <Fragment>
+  <DirectoryRef Id="APPLICATIONFOLDER">
+    <Component Id="ApplicationShortcut" Guid="{2E5EE73E-FFEA-46D7-9D15-3A0EA6639A12}">
+      <Shortcut Id="ApplicationStartMenuShortcut"
+                Name="EPL Predictor"
+                Description="Predicts EPL match result"
+                Target="[#CloudFootball.exe]"
+                WorkingDirectory="APPLICATIONROOTDIRECTORY"/>
+      <RemoveFolder Id="APPLICATIONFOLDER" On="uninstall"/>
+      <RegistryValue Root="HKCU" Key="Software\Microsoft\EplPredictor" Name="installed" Type="integer" Value="1" KeyPath="yes"/>
+    </Component>
+  </DirectoryRef>
+  </Fragment>
+  
+  <!-- TODO : Clean uninstall -->
+  <!-- TODO : Multiple version getting installed simultaneously -->
+  <!-- TODO : Add self signed certificate -->
+  <!-- TODO : Check OS version, .NET version etc before proceeding wtih installation -->
+  <!-- TODO : Try out more stuff mentioned at http://wixtoolset.org/documentation/manual/v3/howtos/ -->
+  
+</Wix>

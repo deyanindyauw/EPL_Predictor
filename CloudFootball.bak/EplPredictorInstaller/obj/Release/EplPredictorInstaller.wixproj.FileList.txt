@@ -1,0 +1,6 @@
+C:\Users\Kensci\documents\visual studio 2015\Projects\CloudFootball\EplPredictorInstaller\bin\Release\EplPredictorInstaller.msi
+C:\Users\Kensci\documents\visual studio 2015\Projects\CloudFootball\EplPredictorInstaller\bin\Release\EplPredictorInstaller.wixpdb
+obj\Release\Product.wixobj
+obj\Release\EplPredictorInstaller.wixproj.BindContentsFileListnull.txt
+obj\Release\EplPredictorInstaller.wixproj.BindOutputsFileListnull.txt
+obj\Release\EplPredictorInstaller.wixproj.BindBuiltOutputsFileListnull.txt
