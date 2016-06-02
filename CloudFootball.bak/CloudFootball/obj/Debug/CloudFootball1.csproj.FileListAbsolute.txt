@@ -1,9 +1,0 @@
-c:\users\kensci\documents\visual studio 2015\Projects\CloudFootball1\CloudFootball1\bin\Debug\CloudFootball1.exe.config
-c:\users\kensci\documents\visual studio 2015\Projects\CloudFootball1\CloudFootball1\bin\Debug\CloudFootball1.exe
-c:\users\kensci\documents\visual studio 2015\Projects\CloudFootball1\CloudFootball1\bin\Debug\CloudFootball1.pdb
-c:\users\kensci\documents\visual studio 2015\Projects\CloudFootball1\CloudFootball1\obj\Debug\CloudFootball1.Form1.resources
-c:\users\kensci\documents\visual studio 2015\Projects\CloudFootball1\CloudFootball1\obj\Debug\CloudFootball1.Properties.Resources.resources
-c:\users\kensci\documents\visual studio 2015\Projects\CloudFootball1\CloudFootball1\obj\Debug\CloudFootball1.csproj.GenerateResource.Cache
-c:\users\kensci\documents\visual studio 2015\Projects\CloudFootball1\CloudFootball1\obj\Debug\CloudFootball1.exe
-c:\users\kensci\documents\visual studio 2015\Projects\CloudFootball1\CloudFootball1\obj\Debug\CloudFootball1.pdb
-c:\users\kensci\documents\visual studio 2015\Projects\CloudFootball1\CloudFootball1\obj\Debug\CloudFootball1.csprojResolveAssemblyReference.cache

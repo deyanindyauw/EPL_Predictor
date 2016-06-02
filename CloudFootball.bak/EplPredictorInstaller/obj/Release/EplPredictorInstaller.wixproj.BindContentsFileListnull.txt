@@ -1,3 +1,0 @@
-C:\\Users\\Kensci\\Documents\\visual studio 2015\\Projects\\CloudFootball\\CloudFootball\\bin\\Release\\res\\Bpl_icon.ico
-C:\\Users\\Kensci\\Documents\\visual studio 2015\\Projects\\CloudFootball\\CloudFootball\\bin\\Release\\CloudFootball.exe
-C:\\Users\\Kensci\\Documents\\visual studio 2015\\Projects\\CloudFootball\\CloudFootball\\bin\\Release\\res\\ManU_icon.ico

@@ -1,8 +1,0 @@
-c:\users\kensci\documents\visual studio 2015\Projects\CloudFootball1\CloudFootball1\bin\Release\CloudFootball1.exe.config
-c:\users\kensci\documents\visual studio 2015\Projects\CloudFootball1\CloudFootball1\bin\Release\CloudFootball1.exe
-c:\users\kensci\documents\visual studio 2015\Projects\CloudFootball1\CloudFootball1\bin\Release\CloudFootball1.pdb
-c:\users\kensci\documents\visual studio 2015\Projects\CloudFootball1\CloudFootball1\obj\Release\CloudFootball1.Properties.Resources.resources
-c:\users\kensci\documents\visual studio 2015\Projects\CloudFootball1\CloudFootball1\obj\Release\CloudFootball1.csproj.GenerateResource.Cache
-c:\users\kensci\documents\visual studio 2015\Projects\CloudFootball1\CloudFootball1\obj\Release\CloudFootball1.exe
-c:\users\kensci\documents\visual studio 2015\Projects\CloudFootball1\CloudFootball1\obj\Release\CloudFootball1.pdb
-c:\users\kensci\documents\visual studio 2015\Projects\CloudFootball1\CloudFootball1\obj\Release\CloudFootball1.FormEpl.resources
